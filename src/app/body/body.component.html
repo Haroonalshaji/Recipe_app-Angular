@@ -1,0 +1,38 @@
+<div class="he m-3">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://graphicsfamily.com/wp-content/uploads/edd/2022/08/Food-Menu-Instagram-Carousel-Design-scaled.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/6ZzHx68Z660/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD7TPZvSZhzAfbiVQJWgrvSRR_G7A" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://minus37.com/wp-content/uploads/2018/08/advertise-minus.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6" *ngFor="let x of items">
+            <div class="card mb-3 m-2" style="height:auto">
+                <img [src]="x.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{x.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{x.cuisine}}</h6>
+                    <p class="card-text"><span style="font-weight: 500;">Ingredients:</span> {{x.ingredients}}</p>
+                    <p class="card-text"><span style="font-weight: 500;">Instructions:</span> {{x.instructions}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
